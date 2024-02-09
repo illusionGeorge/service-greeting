@@ -17,7 +17,7 @@ jobs:
       - name: Get image tag 
         run: echo "IMAGE_TAG=$(git rev-list --count HEAD)" >> $GITHUB_ENV
       - name: Build image
-        run: (cd service-greeting; docker build -t "${{ env.IMAGE_NAME }}" .)
+        run: docker build -t "${{ env.IMAGE_NAME }}" .
       - name: Docker login
         run: echo "${{ secrets.ALIYUN_ACR_PASSWORD }}" | docker login --username=${{ secrets.ALIYUN_ACR_USER }} --password-stdin ${{ env.DOCKER_REGISTRY }}
       - name: Push image latest
@@ -42,8 +42,8 @@ jobs:
           kubectl config use-context aliyun
       - name: Apply
         run : |
-          (cd service-greeting; kubectl apply -f k8s-deployment.yaml)
-          (cd service-greeting; kubectl apply -f k8s-service.yaml)
+          kubectl apply -f k8s-deployment.yaml
+          kubectl apply -f k8s-service.yaml
 
 env:
   IMAGE_NAME: service-greeting-jonathan
