@@ -1,4 +1,4 @@
-module github.com/weidaicheng/github-action-sharing/service-greeting
+module github.com/weidaicheng/service-greeting
 
 go 1.21.6
 

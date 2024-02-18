@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/weidaicheng/github-action-sharing/service-greeting/svc"
+	"github.com/weidaicheng/service-greeting/svc"
 )
 
 func TestSayHello(t *testing.T) {

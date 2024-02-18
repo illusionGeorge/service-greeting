@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/weidaicheng/github-action-sharing/service-greeting/svc"
+	"github.com/weidaicheng/service-greeting/svc"
 )
 
 func main() {
