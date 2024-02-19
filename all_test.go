@@ -9,7 +9,7 @@ import (
 
 func TestSayHello(t *testing.T) {
 	// arrange
-	name := "Jonathan"
+	name := "name"
 	want := regexp.MustCompile(`\b` + name + `\b`)
 
 	// act
