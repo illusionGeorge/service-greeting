@@ -46,7 +46,7 @@ jobs:
           kubectl apply -f k8s-service.yaml
 
 env:
-  IMAGE_NAME: service-greeting-jonathan
+  IMAGE_NAME: service-greeting-george
   IMAGE_NAMESPACE: wdcdavyc
   DOCKER_REGISTRY: registry.cn-hangzhou.aliyuncs.com
   K8S_SERVER: 121.41.43.46:8080

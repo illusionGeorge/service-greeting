@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-greeting-jonathan-service 
+  name: service-greeting-george-service 
 spec:
   ports:
-  - port: 30000
-    nodePort: 30000
+  - port: 30005
+    nodePort: 30005
     targetPort: 8080 
   selector:
-    app: service-greeting-jonathan
+    app: service-greeting-george
   type: NodePort
